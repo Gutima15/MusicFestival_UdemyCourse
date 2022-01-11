@@ -1,0 +1,28 @@
+@mixin telefono {
+    @media (min-width: $telefono) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin gridCols($columnas, $espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+@mixin cutBorderTopRight($colorInterno, $colorExterno){
+    content: '';
+    top: 0; right:0; z-index: 0;
+    border-top: 5rem solid $colorExterno;
+    border-left: 5rem solid $colorInterno;
+}

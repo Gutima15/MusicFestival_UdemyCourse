@@ -1,0 +1,71 @@
+.lineup {
+    background-color: $crema;
+    padding: $separacion 0;
+    //#F5F8C6
+    h3,p {
+        text-align: center;
+    }
+    .dia{
+        text-transform: uppercase;
+        margin: $separacion 0;
+        
+    }
+}
+
+.escenarios-contenedor {
+    @include tablet{
+        @include gridCols(2, $separacion);
+    }
+
+    .escenario {
+        padding-top: 2.5rem;
+    } 
+
+    .nombre-escenario {
+        font-size: 2rem;
+        font-weight: $bold;
+
+        &:after{
+            content: '';
+            width: 100%;
+            height: 10rem;
+            display: block;
+            margin: 2rem auto 0 auto;
+            background-size: 10rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }   
+}
+.sabana .nombre-escenario {
+    &:after {
+        background-image: url(../img/park.png);
+    }
+}
+
+.estadio .nombre-escenario {
+    &:after{
+        background-image: url(../img/stadium.png);
+    }
+}
+
+.calendario {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+        padding: 2.5rem;
+        font-weight: $bold;
+        span {
+            font-weight: $regular;
+        }
+    }
+}
+
+.bg-colorA .calendario li:nth-child(odd) {
+    background-color:darken($verde, 5) ;
+}
+.bg-colorB .calendario li:nth-child(odd) {
+    background-color:darken($anaranjado, 5) ;
+}

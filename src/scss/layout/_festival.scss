@@ -1,0 +1,25 @@
+.sobre-festival{
+    padding: $separacion 0;
+    @include tablet{
+        @include gridCols(2, .5rem);
+    }
+    img{
+        max-width: 70%;
+    }
+}
+
+.contenido-festival{
+    display: flex;
+    flex-direction: column; // al tener esto puedo alinear verticalmente con justify content
+    justify-content: center;
+    h2{
+        font-size: 3rem;   
+    }
+    .fecha{
+        color: $rosadoOscuro;
+        font-weight: $bold;
+    }
+    .texto{
+        line-height: 1.5;
+    }
+}

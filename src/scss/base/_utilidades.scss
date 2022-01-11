@@ -1,0 +1,25 @@
+.bg-colorA {
+    background-color: $verde;
+    position: relative;
+    color: $blanco;
+    &:before {
+        position: absolute;
+        @include cutBorderTopRight($verde, $crema);
+    }
+    .nombre-escenario{
+        color: $blanco;
+    }
+}
+
+.bg-colorB {
+    background-color: $anaranjado;
+    position: relative;
+    color: $morado;
+    &:before {
+        position: absolute;
+        @include cutBorderTopRight($anaranjado, $crema);
+    }
+    .nombre-escenario{
+        color: $morado;
+    }
+}

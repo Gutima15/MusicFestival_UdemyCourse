@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilling Lo-fi Festival</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Chilling Lo-fi Festival</h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Chilling lo-fi Festival <span>San José, Costa Rica, diciembre 2021</span> </h2>
+            </div>
+        </div>
+        <video controls autoplay muted loop>
+            <source src="video/lofi-girl.mp4" type="video/mp4">
+            <source src="video/lofi-girl.ogg" type="video/ogg">
+            <source src="video/lofi-girl.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div class="sobre-festival contenedor">
+        <div class="imagen">
+            <img src="build/img/artworks-ulqF368GIDlXthBL-8iDikQ-t500x500.jpeg" alt="Portada del sencillo B-arb del reto lofi">
+        </div>
+        <div class="contenido-festival">
+            <h2>Chilling lo-fi Festival</h2>
+            <p class="fecha">San José, Costa Rica, diciembre 2021</p>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero ex officia 
+                quis quibusdam minima sed laboriosam sunt, repellendus veniam deserunt aperiam repudiandae 
+                cupiditate omnis consequuntur praesentium nobis assumenda! Nisi.</p>
+        </div>
+    </div>
+
+    <section id="lineup" class="lineup">
+        <h3>Line up</h3>
+        <p class="dia">Sábado 4</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario sabana bg-colorA">
+                <p class="nombre-escenario">Escenario Sabana</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Sun-Ar</span></li>
+                    <li>22:00 | <span>Bernat Cucarella Sifre</span></li>
+                    <li>20:00 | <span>Disonancia congnitiva</span></li>
+                    <li>19:00 | <span>Florencia Pino</span></li>
+                    <li>18:00 | <span>Skadem</span></li>
+                    <li>17:00 | <span>Victor Rodriguez</span></li>
+                </ul>
+            </div>
+            <div class="escenario estadio bg-colorB">
+                <p class="nombre-escenario">Escenario Estadio Nacional</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Surcando entre historias</span></li>
+                    <li>22:00 | <span>TenderFlutter</span></li>
+                    <li>20:00 | <span>Leandro Perié</span></li>
+                    <li>19:00 | <span>Jol Tarot</span></li>
+                    <li>18:00 | <span>Box Shape heart</span></li>
+                    <li>17:00 | <span>Sacro Forest</span></li>
+                </ul>
+            </div>
+        </div>
+        <p class="dia">Domingo 5</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario sabana bg-colorB">
+                <p class="nombre-escenario">Escenario Sabana</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Zelk in a box</span></li>
+                    <li>22:00 | <span>Paracetamol y pitágoras</span></li>
+                    <li>20:00 | <span>Lago roberts</span></li>
+                    <li>19:00 | <span>Dani Duque</span></li>
+                    <li>18:00 | <span>Sans Souci</span></li>
+                    <li>17:00 | <span>Than</span></li>
+                </ul>
+            </div>
+            <div class="escenario estadio bg-colorA">
+                <p class="nombre-escenario">Escenario Estadio Nacional</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Elias Martínez</span></li>
+                    <li>22:00 | <span>Vanware</span></li>
+                    <li>20:00 | <span>Xabier Echaniz</span></li>
+                    <li>19:00 | <span>Ragaire</span></li>
+                    <li>18:00 | <span>Uboro</span></li>
+                    <li>17:00 | <span>Ikaori</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos">
+        <h3>Boletos</h3>
+        <div class="contenedor-boletos contenedor">
+            <div class="basico">
+                <p>Pase 1 día</p>
+                <table class="pase"> <!--Ejemplo de tabla con nombre, apellidos...-->
+                    <thead>
+                        <tr>
+                            <th>Incluye</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Acceso a todos los escenarios</td>
+                        </tr>
+                        <tr>
+                            <td>Comida y bebidas</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>$100</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="premium">
+                <p>Pase 2 días</p>
+                <table class="pase"> <!--Ejemplo de tabla con nombre, apellidos...-->
+                    <thead>
+                        <tr>
+                            <th>Incluye</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Acceso a todos los escenarios</td>
+                        </tr>
+                        <tr>
+                            <td>Comida y bebidas</td>
+                        </tr>
+                        <tr>
+                            <td>Camisa del evento</td>
+                        </tr>
+                        <tr>
+                            <td>Parqueo asegurado</td>
+                        </tr>
+                        <tr>
+                            <td>Acceso VIP</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>$220</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Chilling Lo-fi Festival. Todos los derechos Reservados</p>
+        <p>Este es un proyecto de práctica y no tiene ningún motivo comercial</p>
+    </footer>
+
+    <script src="build/js/bundle.js"></script>
+</body>
+</html>
